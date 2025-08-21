@@ -159,13 +159,13 @@ export default function Hero() {
   }, [subIndex, index, deleting]);
 
   return (
-    <section
+     <section
       id="home"
       className="px-20 lg:px-8 py-32 relative overflow-hidden flex items-center justify-center text-center"
     >
       <div className="max-w-4xl mx-auto relative z-10 flex flex-col items-center">
         {/* Heading */}
-        <h1 className="text-4xl text-cyan-500 lg:text-6xl font-bold leading-tight mb-6 font-mono">
+        <h1 className="text-4xl lg:text-6xl font-bold leading-tight mb-6 font-['Orbitron'] text-cyan-500">
   VIKSHA CODING CLUB
   <br />
   <span className="text-transparent bg-clip-text text-3xl bg-gradient-to-r from-[rgb(70,197,212)] via-[rgb(70,197,212)] to-[rgb(70,197,212)] font-mono">
@@ -175,22 +175,29 @@ export default function Hero() {
 </h1>
 
 
+
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Link href="/projects">
-            <Button className="bg-[linear-gradient(to_right,rgb(70,197,212),rgb(60,170,190),rgb(50,150,170))] hover:bg-[linear-gradient(to_right,rgb(90,210,220),rgb(70,197,212),rgb(60,170,190))] px-8 py-4 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 text-white border-0">
-              Explore Projects
-            </Button>
-          </Link>
+         <Link href="/projects">
+  <Button className="bg-gradient-to-r from-sky-900 via-cyan-800 to-teal-900 hover:from-sky-800 hover:via-cyan-700 hover:to-teal-800 px-8 py-4 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 text-white shadow-md shadow-cyan-900/40">
+    Explore Projects
+  </Button>
+</Link>
+
+
 
           <Link href="/contact">
-            <Button
-              variant="outline"
-              className="border-[rgba(70,197,212,0.5)] text-[rgba(70,197,212,0.9)] hover:bg-[rgba(70,197,212,0.15)] px-8 py-4 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105"
-            >
-              Join Us
-            </Button>
-          </Link>
+  <Button
+    className="bg-[rgba(0,40,60,0.7)] border border-[rgba(70,197,212,0.5)] 
+               text-[rgba(70,197,212,0.9)] 
+               hover:bg-[rgba(0,60,90,0.9)] 
+               px-8 py-4 rounded-xl font-semibold 
+               transition-all duration-300 transform hover:scale-105 shadow-lg"
+  >
+    Join Us
+  </Button>
+</Link>
+
         </div>
       </div>
     </section>

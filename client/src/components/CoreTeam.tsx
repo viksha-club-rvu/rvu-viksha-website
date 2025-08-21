@@ -25,7 +25,7 @@ export default function CoreTeam() {
   return (
     <section id="team" className="px-4 lg:px-8 py-16">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl lg:text-4xl font-bold text-center mb-12">The Core Team</h2>
+        <h2 className="text-3xl lg:text-4xl font-bold  text-center mb-12">The Core Team</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {coreTeamMembers.map((member, index) => (
             <div key={index} className="text-center">

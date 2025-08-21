@@ -10,7 +10,11 @@ const CoreTeam: React.FC = () => {
 
   return (
     <section className="core-team-section" id="core-team">
-      <h2 className="rainbow-heading">The Core Team</h2>
+      <h2 className="rainbow-heading text-cyan-500">The Core Team</h2>
+      {/* <h2 className="rainbow-heading text-cyan-500 font-['Orbitron']">
+  The Core Team
+</h2> */}
+
       <p className="subtitle">Every club is powered by its people—these are ours</p>
       <div className="timeline">
         <span className="end-dot left" aria-hidden />

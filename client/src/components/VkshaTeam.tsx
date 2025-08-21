@@ -1,14 +1,8 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "wouter";
 import GrpPic from "./GrpPic.jpeg";
 
 export default function VkshaTeam() {
-  const scrollToTeam = () => {
-    const element = document.getElementById("team");
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   return (
     <section className="px-6 lg:px-12 py-12">
       <div className="max-w-7xl mx-auto">
@@ -33,15 +27,14 @@ export default function VkshaTeam() {
               thrive. We believe in learning through practice, collaboration,
               and real-world project development.
             </p>
-            <Button
-  onClick={scrollToTeam}
-  className="bg-gradient-to-r from-[rgb(70,197,212)] via-[rgb(70,197,212)] to-[rgb(70,197,212)] 
-             text-white text-md font-mono px-3 py-3 rounded-lg shadow-lg 
-             hover:scale-110 hover:opacity-90 transform transition-all duration-300"
->
-  Meet Our Team
-</Button>
 
+            {/* Navigation button → goes to /team */}
+            <Link href="/team">
+              <Button
+                className="bg-gradient-to-r from-sky-900 via-cyan-800 to-teal-900 hover:from-sky-800 hover:via-cyan-700 hover:to-teal-800 px-8 py-4 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 text-white shadow-md shadow-cyan-900/40">
+                Meet Our Team
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
