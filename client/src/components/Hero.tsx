@@ -192,8 +192,7 @@ export default function Hero() {
                text-[rgba(70,197,212,0.9)] 
                hover:bg-[rgba(0,60,90,0.9)] 
                px-8 py-4 rounded-xl font-semibold 
-               transition-all duration-300 transform hover:scale-105 shadow-lg"
-  >
+               transition-all duration-300 transform hover:scale-105 shadow-lg"  >
     Join Us
   </Button>
 </Link>
