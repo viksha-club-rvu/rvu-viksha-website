@@ -49,7 +49,7 @@ export default function Team() {
   };
 
   const [location] = useLocation();
-  const [year, setYear] = useState("2022");
+  const [year, setYear] = useState("2025");
   const [flippedIndex, setFlippedIndex] = useState<number | null>(null);
 
   // Sync ?year= from URL
