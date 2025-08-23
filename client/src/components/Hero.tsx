@@ -42,8 +42,10 @@ export default function Hero() {
     >
       <div className="max-w-4xl mx-auto relative z-10 flex flex-col items-center">
         {/* Heading */}
-        <h1 className="text-4xl lg:text-6xl font-bold leading-tight mb-6 font-['Orbitron'] 
-           bg-gradient-to-b from-cyan-500 to-gray-200 bg-clip-text text-transparent">
+        {/* <h1 className="text-4xl lg:text-6xl font-bold leading-tight mb-6 font-['Orbitron'] 
+           bg-gradient-to-b from-cyan-500 to-gray-200 bg-clip-text text-transparent"> */}
+           <h1 className="text-4xl lg:text-6xl font-bold leading-tight mb-6 font-['Orbitron'] 
+           text-white-500">
           VIKSHA CODING CLUB
           <br />
           {/* <span className="text-transparent bg-clip-text text-3xl bg-gradient-to-r from-[rgb(70,197,212)] via-[rgb(70,197,212)] to-[rgb(70,197,212)] font-mono"> */}

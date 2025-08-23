@@ -13,7 +13,7 @@ const CoreTeam: React.FC = () => {
   return (
     <section className="core-team-section" id="core-team">
       <h2 className="rainbow-heading text-white-500">The Core Team</h2>
-      <p className="subtitle text-transparent bg-clip-text  bg-gradient-to-r from-[rgb(70,197,212)] via-[rgb(70,197,212)] to-[rgb(70,197,212)] ">
+      <p className="subtitle text-white-500 ">
         Every club is powered by its people—these are ours
       </p>
       <div className="timeline">

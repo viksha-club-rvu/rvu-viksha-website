@@ -22,7 +22,7 @@ export default function VkshaTeam() {
             <h2 className="text-3xl text-white-500 lg:text-4xl font-bold mb-6">
               The Viksha Team
             </h2>
-            <p className="text-cyan-300 text-lg leading-relaxed mb-8">
+            <p className="text-white-300 text-lg leading-relaxed mb-8">
               Our passionate team of developers, designers, and innovators work
               together to create an environment where coding enthusiasts can
               thrive. We believe in learning through practice, collaboration,
