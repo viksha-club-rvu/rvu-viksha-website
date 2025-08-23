@@ -8,20 +8,21 @@ export default function VkshaTeam() {
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           {/* Left side → Image with hover zoom */}
-          <div className="rounded-3xl h-96 w-full flex items-center justify-center overflow-hidden group">
-            <img
-              src={GrpPic}
-              alt="Viksha Team"
-              className="object-cover h-full w-full transform transition-transform duration-500 ease-in-out group-hover:scale-105"
-            />
-          </div>
+          <div className="relative rounded-3xl h-96 w-full flex items-center justify-center overflow-hidden group shadow-[0_0_40px_15px_rgba(56,189,248,0.35)]">
+  <img
+    src={GrpPic}
+    alt="Viksha Team"
+    className="object-cover h-full w-full transform transition-transform duration-500 ease-in-out group-hover:scale-105"
+  />
+</div>
+
 
           {/* Right side → Text content */}
           <div>
-            <h2 className="text-3xl text-cyan-500 lg:text-4xl font-bold mb-6">
+            <h2 className="text-3xl text-white-500 lg:text-4xl font-bold mb-6">
               The Viksha Team
             </h2>
-            <p className="text-gray-300 text-lg leading-relaxed mb-8">
+            <p className="text-cyan-300 text-lg leading-relaxed mb-8">
               Our passionate team of developers, designers, and innovators work
               together to create an environment where coding enthusiasts can
               thrive. We believe in learning through practice, collaboration,
