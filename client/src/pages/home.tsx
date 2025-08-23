@@ -100,7 +100,8 @@ export default function Home() {
         <section className="px-4 lg:px-8 py-16">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl lg:text-4xl font-bold mb-4 bg-gradient-to-r from-white via-[rgb(70,197,212)] to-white bg-clip-text text-transparent">
+              {/* <h2 className="text-3xl lg:text-4xl font-bold mb-4 bg-gradient-to-r from-white via-[rgb(70,197,212)] to-white bg-clip-text text-transparent"> */}
+               <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-white-500">
                 Explore Our World
               </h2>
               <p className="text-white text-lg max-w-2xl mx-auto">
