@@ -142,7 +142,7 @@ export default function Events() {
       <div className="animate-in fade-in duration-1000">
         {/* Header */}
         <section className="px-7 lg:px-8 py-10 text-center">
-          <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-cyan-500 bg-clip-text  mb-6">
+          <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-white-500 bg-clip-text  mb-6">
             Events & Activities
           </h1>
           <p className="text-gray-300 text-base sm:text-lg max-w-3xl mx-auto leading-relaxed">
