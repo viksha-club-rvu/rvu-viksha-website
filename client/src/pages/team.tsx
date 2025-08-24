@@ -14,40 +14,32 @@ export default function Team() {
 
   // Dummy data for 2022–2025
   const teamData: Record<string, Member[]> = {
-    "2022": [
-      { name: "Alice", role: "President", img: "/team/2022/president.jpg", details: "Led the club in 2022." },
-      { name: "Bob", role: "Vice President", img: "/team/2022/vp.jpg", details: "Organized events and operations." },
-      { name: "Charlie", role: "Technical Head", img: "/team/2022/tech.jpg", details: "Oversaw technical projects." },
-      { name: "Diana", role: "Head of Design", img: "/team/2022/design.jpg", details: "Managed UI/UX." },
-      { name: "Eve", role: "Head of PR", img: "/team/2022/pr.jpg", details: "Handled PR and media." },
-      { name: "Frank", role: "Head of Event", img: "/team/2022/events.jpg", details: "Planned events." },
-    ],
     "2023": [
-      { name: "Grace", role: "President", img: "/team/2023/president.jpg", details: "Led the club in 2023." },
-      { name: "Hank", role: "Vice President", img: "/team/2023/vp.jpg", details: "Supported all departments." },
-      { name: "Ivy", role: "Technical Head", img: "/team/2023/tech.jpg", details: "Directed coding sessions." },
-      { name: "Jack", role: "Head of Design", img: "/team/2023/design.jpg", details: "Handled creative direction." },
-      { name: "Karen", role: "Head of PR", img: "/team/2023/pr.jpg", details: "Worked on communications." },
-      { name: "Leo", role: "Head of Event", img: "/team/2023/events.jpg", details: "Planned hackathons." },
+      { name: "Rama", role: "Chief Advisor", img: "https://media.wired.com/photos/59270140f3e2356fd800b27f/191:100/w_1280,c_limit/CAHP.jpg?mbid=social_retweet", details: "Directs the club in all aspects." },
+      { name: "Shama", role: "President", img: "https://i.redd.it/a165wzt085zb1.jpg", details: "Leads the club in 2025." },
+      { name: "Bama", role: "Vice President", img: "https://m.media-amazon.com/images/I/71JpPdKSEAL._UY1100_.jpg", details: "Coordinates operations." },
+      { name: "Tina", role: "Technical Head", img: "https://cdn.mos.cms.futurecdn.net/Hu8Ht2LFZTdwdMvKnp9ZnA.jpg", details: "Heads the technical team." },
+      { name: "Mama", role: "Head of Design", img: "https://comicbook.com/wp-content/uploads/sites/4/2025/05/hulk-mcu.jpg?w=1024", details: "Handles UI/UX design." },
+      { name: "Gama", role: "Head of Event Management and social Media", img: "https://sm.mashable.com/mashable_sea/feature/t/the-thanos/the-thanos-snap-for-real-lets-remove-humans-from-half-of-ear_bq2q.jpg", details: "Handles offline activities and social media." },
     ],
     "2024": [
-      { name: "Maya", role: "President", img: "/team/2024/president.jpg", details: "Led the club in 2024." },
-      { name: "Noah", role: "Vice President", img: "/team/2024/vp.jpg", details: "Ran logistics and outreach." },
-      { name: "Olivia", role: "Technical Head", img: "/team/2024/tech.jpg", details: "Managed coding events." },
-      { name: "Paul", role: "Head of Design", img: "/team/2024/design.jpg", details: "Oversaw brand design." },
-      { name: "Quinn", role: "Head of PR", img: "/team/2024/pr.jpg", details: "Handled external relations." },
-      { name: "Ruth", role: "Head of Event", img: "/team/2024/events.jpg", details: "Organized conferences." },
+      { name: "Doraemon", role: "Chief Advisor", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ64geEJbm35BfvD3LhFEVocNi6VK_6eGT2_Q&s", details: "Directs the club in all aspects." },
+      { name: "Shivashi", role: "President", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFk2rhSvKmAri2KHVVwatRv6cTIKP9BsVWYQ&s", details: "Leads the club in 2025." },
+      { name: "Nobita", role: "Vice President", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb-KvuTJ_RMfnFpLwId44NCDBrzkuAMl-C9Q&s", details: "Coordinates operations." },
+      { name: "Shizuka", role: "Technical Head", img: "https://i.pinimg.com/474x/bc/0c/fc/bc0cfcaca278b49919e50069f1216acb.jpg", details: "Heads the technical team." },
+      { name: "Gian", role: "Head of Design", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-xPYeKxSiTPh3tgtwEmO9AWvxs9oXuSvrmA&s", details: "Handles UI/UX design." },
+      { name: "Sunio", role: "Head of Event Management and social Media", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRffEzh-ZlIHiOE4c5zwIXwGLyBt9xGrDJPXQ&s", details: "Handles offline activities and social media." },
     ],
     "2025": [
-      { name: "Sam", role: "President", img: "/team/2025/president.jpg", details: "Leads the club in 2025." },
-      { name: "Tina", role: "Vice President", img: "/team/2025/vp.jpg", details: "Coordinates operations." },
-      { name: "Uma", role: "Technical Head", img: "/team/2025/tech.jpg", details: "Heads the technical team." },
-      { name: "Victor", role: "Head of Design", img: "/team/2025/design.jpg", details: "Handles UI/UX design." },
-      { name: "Wendy", role: "Head of PR", img: "/team/2025/pr.jpg", details: "Handles promotions." },
-      { name: "Xander", role: "Head of Event", img: "/team/2025/events.jpg", details: "Plans yearly events." },
+      { name: "Lohith", role: "Chief Advisor", img: "https://media.wired.com/photos/59270140f3e2356fd800b27f/191:100/w_1280,c_limit/CAHP.jpg?mbid=social_retweet", details: "Directs the club in all aspects." },
+      { name: "Keshav", role: "President", img: "https://i.redd.it/a165wzt085zb1.jpg", details: "Leads the club in 2025." },
+      { name: "Aditya", role: "Vice President", img: "https://m.media-amazon.com/images/I/71JpPdKSEAL._UY1100_.jpg", details: "Coordinates operations." },
+      { name: "Aditi", role: "Technical Head", img: "https://cdn.mos.cms.futurecdn.net/Hu8Ht2LFZTdwdMvKnp9ZnA.jpg", details: "Heads the technical team." },
+      { name: "Ashutosh", role: "Head of Design", img: "https://comicbook.com/wp-content/uploads/sites/4/2025/05/hulk-mcu.jpg?w=1024", details: "Handles UI/UX design." },
+      { name: "Deepak", role: "Head of Event Management and social Media", img: "https://sm.mashable.com/mashable_sea/feature/t/the-thanos/the-thanos-snap-for-real-lets-remove-humans-from-half-of-ear_bq2q.jpg", details: "Handles offline activities and social media." },
     ],
   };
-
+     
   const [location] = useLocation();
   const [year, setYear] = useState("2025");
   const [flippedIndex, setFlippedIndex] = useState<number | null>(null);
@@ -69,7 +61,7 @@ export default function Team() {
         {/* Header */}
         <section className="w-full py-12 sm:py-16 lg:py-20">
           <div className="text-center mb-10 sm:mb-12 lg:mb-16">
-             <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-cyan-500 bg-clip-text  mb-6">
+             <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-white-500 bg-clip-text  mb-6">
               The Core Team
             </h1>
             <p className="mt-4 text-base sm:text-lg lg:text-xl text-blue-100">
@@ -136,53 +128,6 @@ export default function Team() {
                 </div>
               </div>
             ))}
-          </div>
-        </section>
-
-        {/* Stats */}
-        <section className="px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
-          <div className="max-w-6xl mx-auto">
-            <div className="rounded-3xl bg-white/10 backdrop-blur-md border border-white/20 p-8 sm:p-12 shadow-xl">
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-8 sm:mb-12 text-center text-white">
-                Our Impact
-              </h2>
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-10 text-center">
-                {[
-                  { value: "500+", label: "Active Members" },
-                  { value: "50+", label: "Projects Completed" },
-                  { value: "100+", label: "Events Organized" },
-                  { value: "25+", label: "Awards Won" },
-                ].map((stat, i) => (
-                  <div key={i} className="space-y-1 sm:space-y-2">
-                    <div className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-blue-300">
-                      {stat.value}
-                    </div>
-                    <div className="text-xs sm:text-sm lg:text-base text-blue-100">{stat.label}</div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* CTA */}
-        <section className="px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
-          <div className="max-w-3xl sm:max-w-4xl mx-auto text-center">
-            <div className="rounded-3xl bg-white/10 backdrop-blur-md border border-white/20 p-8 sm:p-12 shadow-lg">
-              <Code className="mx-auto mb-6 text-blue-300" size={40} />
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 text-white">
-                Want to Join Our Team?
-              </h2>
-              <p className="text-sm sm:text-base lg:text-lg text-blue-100 mb-8">
-                We're always looking for passionate developers, designers, and innovators to join our growing
-                community. Be part of something amazing!
-              </p>
-              <Link href="/contact">
-                <Button className="bg-gradient-to-r from-blue-600 to-cyan-500 hover:opacity-90 px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105">
-                  Apply Now
-                </Button>
-              </Link>
-            </div>
           </div>
         </section>
       </div>
