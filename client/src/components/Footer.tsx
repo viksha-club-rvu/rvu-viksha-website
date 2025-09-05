@@ -92,10 +92,17 @@ export default function Footer() {
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
               &copy; 2025 Viksha Coding Club. All rights reserved.
             </p>
-            <div className="flex space-x-6 text-sm text-gray-400">
+            <div className="flex space-x-6 items-center text-sm text-gray-400">
               <a href="#" className="hover:text-blue-400 transition-colors">Privacy Policy</a>
               <a href="#" className="hover:text-blue-400 transition-colors">Terms of Service</a>
               <a href="#" className="hover:text-blue-400 transition-colors">Code of Conduct</a>
+              {/* FAQ button - matches site styling and sits in footer (not navbar) */}
+              <a
+                href="/faq"
+                className="ml-2 inline-flex items-center px-4 py-2 bg-gradient-to-r from-purple-600 to-blue-500 text-white rounded-full text-sm font-semibold shadow-lg hover:scale-105 transition-transform duration-200"
+              >
+                FAQ
+              </a>
             </div>
           </div>
         </div>

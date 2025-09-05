@@ -12,7 +12,12 @@ import Team from "@/pages/team";
 import Contact from "@/pages/contact";
 import NotFound from "@/pages/not-found";
 import Blogs from "@/pages/blogs";
+<<<<<<< HEAD
 import About from "@/pages/about";
+=======
+import FAQ from "@/pages/faq";
+import FAQList from "@/pages/faq-list";
+>>>>>>> mine/main
 
 // animation component
 import IntroAnimation from "@/components/IntroAnimation";
@@ -39,8 +44,13 @@ function Router() {
         <Route path="/team" component={Team} />
         <Route path="/blogs" component={Blogs} />
         <Route path="/contact" component={Contact} />
+<<<<<<< HEAD
         <Route path="/about" component={About} />
 
+=======
+        <Route path="/faq" component={FAQ} />
+        <Route path="/faq-list" component={FAQList} />
+>>>>>>> mine/main
         <Route component={NotFound} />
       </Switch>
     </>
