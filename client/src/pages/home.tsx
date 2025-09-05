@@ -3,8 +3,11 @@ import Hero from "@/components/Hero";
 import VkshaTeam from "@/components/VkshaTeam";
 import Timeline from "@/components/Timeline";
 import Lottie from "lottie-react";
+import { Button } from "@/components/ui/button";
+import { Link } from "wouter";
+import { ArrowRight, Sparkles, Rocket, Users } from "lucide-react";
 
-// Import animation JSON from src
+// Import animation JSON
 import animationData from "@/RobotSaludando.json";
 
 export default function Home() {
