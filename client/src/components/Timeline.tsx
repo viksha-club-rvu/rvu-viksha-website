@@ -25,9 +25,7 @@ const CoreTeam: React.FC = () => {
             <div className="circle" />
           </div>
           <span
-            className="year rainbow-text clickable"
-            onClick={() => handleRedirect(2022)}
-          >
+            className="year rainbow-text">
             2022
           </span>
         </div>
