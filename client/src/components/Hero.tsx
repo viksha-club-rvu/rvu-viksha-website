@@ -38,7 +38,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="px-20 lg:px-8 py-32 relative overflow-hidden flex items-center justify-center text-center"
+      className="px-20 lg:px-8 pt-32 pb-0 relative overflow-hidden flex items-center justify-center text-center"
     >
       <div className="max-w-4xl mx-auto relative z-10 flex flex-col items-center">
         {/* Heading */}

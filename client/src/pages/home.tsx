@@ -79,6 +79,8 @@
 // }
 
 
+
+
 import Layout from "@/components/Layout";
 import Hero from "@/components/Hero";
 import VkshaTeam from "@/components/VkshaTeam";
@@ -86,26 +88,66 @@ import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { ArrowRight, Sparkles, Rocket, Users } from "lucide-react";
 import Timeline from "@/components/Timeline";
+import Lottie from "lottie-react";
+
+// Import animation JSON from src
+import animationData from "@/RobotSaludando.json";
+
 export default function Home() {
   return (
     <Layout>
       <div className="animate-in fade-in duration-1000">
         <Hero />
-         <Timeline />
-         <br/>
-         <br/>
+
+       {/* Viksha Story Section */}
+<section className="px-4 lg:px-8 pt-0 pb-16">   {/* reduced top padding */}
+  <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+    
+    {/* Left side - Text (shifted slightly right) */}
+    <div className="pl-10 md:pl-20">   {/* bumped right a little more */}
+      <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-white">
+        The Viksha Story
+      </h2>
+      <p className="text-gray-300 text-lg mb-6 text-justify">
+        Viksha Coding Club is more than just a community – it’s a hub of innovation, 
+        collaboration, and creativity. From groundbreaking projects to engaging 
+        events, we empower students to learn, build, and grow together.
+      </p>
+
+      <Link href="/about">
+        <Button className="bg-gradient-to-r from-[rgb(70,197,212)] to-[rgb(0,150,180)] text-white px-6 py-3 rounded-xl shadow-lg hover:scale-105 transition-transform">
+          Know More
+        </Button>
+      </Link>
+    </div>
+
+    {/* Right side - Lottie Animation */}
+    <div className="flex justify-center">
+      <Lottie 
+        animationData={animationData} 
+        loop={true} 
+        className="w-full max-w-md rounded-2xl shadow-lg" 
+      />
+    </div>
+  </div>
+</section>
+
+
+        <Timeline />
+        <br />
+        <br />
         <VkshaTeam />
-        
+
         {/* Quick Navigation Section */}
         <section className="px-4 lg:px-8 py-16">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-12">
-              {/* <h2 className="text-3xl lg:text-4xl font-bold mb-4 bg-gradient-to-r from-white via-[rgb(70,197,212)] to-white bg-clip-text text-transparent"> */}
-               <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-white-500">
+              <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-white-500">
                 Explore Our World
               </h2>
               <p className="text-white text-lg max-w-2xl mx-auto">
-                Discover what makes VIKSHA Coding Club unique - from our innovative projects to our vibrant events
+                Discover what makes VIKSHA Coding Club unique - from our innovative projects
+                to our vibrant events
               </p>
             </div>
             
@@ -120,7 +162,7 @@ export default function Home() {
                   <ArrowRight className="text-[rgb(70,197,212)] group-hover:translate-x-1 transition-transform duration-300" size={20} />
                 </div>
               </Link>
-              
+
               <Link href="/events">
                 <div className="group bg-gradient-to-br from-[rgb(70,197,212)]/20 to-[rgb(70,197,212)]/10 backdrop-blur-sm border border-[rgb(70,197,212)]/20 rounded-2xl p-6 hover:scale-105 transition-all duration-300 hover:shadow-2xl hover:shadow-[rgb(70,197,212)]/20 cursor-pointer">
                   <div className="mb-4">
@@ -131,7 +173,7 @@ export default function Home() {
                   <ArrowRight className="text-[rgb(70,197,212)] group-hover:translate-x-1 transition-transform duration-300" size={20} />
                 </div>
               </Link>
-              
+
               <Link href="/team">
                 <div className="group bg-gradient-to-br from-[rgb(70,197,212)]/20 to-[rgb(70,197,212)]/10 backdrop-blur-sm border border-[rgb(70,197,212)]/20 rounded-2xl p-6 hover:scale-105 transition-all duration-300 hover:shadow-2xl hover:shadow-[rgb(70,197,212)]/20 cursor-pointer">
                   <div className="mb-4">
@@ -142,7 +184,7 @@ export default function Home() {
                   <ArrowRight className="text-[rgb(70,197,212)] group-hover:translate-x-1 transition-transform duration-300" size={20} />
                 </div>
               </Link>
-              
+
               <Link href="/contact">
                 <div className="group bg-gradient-to-br from-[rgb(70,197,212)]/20 to-[rgb(70,197,212)]/10 backdrop-blur-sm border border-[rgb(70,197,212)]/20 rounded-2xl p-6 hover:scale-105 transition-all duration-300 hover:shadow-2xl hover:shadow-[rgb(70,197,212)]/20 cursor-pointer">
                   <div className="mb-4">
@@ -162,5 +204,6 @@ export default function Home() {
     </Layout>
   );
 }
+
 
 
