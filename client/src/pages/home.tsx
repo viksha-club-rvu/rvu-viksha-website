@@ -43,7 +43,7 @@ export default function Home() {
       <Lottie 
         animationData={animationData} 
         loop={true} 
-        className="w-full max-w-md rounded-2xl shadow-lg" 
+        className="w-full max-w-md rounded-2xl " 
       />
     </div>
   </div>
@@ -55,68 +55,7 @@ export default function Home() {
         <br />
         <VkshaTeam />
 
-        {/* Quick Navigation Section */}
-        <section className="px-4 lg:px-8 py-16">
-          <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-white-500">
-                Explore Our World
-              </h2>
-              <p className="text-white text-lg max-w-2xl mx-auto">
-                Discover what makes VIKSHA Coding Club unique - from our innovative projects
-                to our vibrant events
-              </p>
-            </div>
-            
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-              <Link href="/projects">
-                <div className="group bg-gradient-to-br from-[rgb(70,197,212)]/20 to-[rgb(70,197,212)]/10 backdrop-blur-sm border border-[rgb(70,197,212)]/20 rounded-2xl p-6 hover:scale-105 transition-all duration-300 hover:shadow-2xl hover:shadow-[rgb(70,197,212)]/20 cursor-pointer">
-                  <div className="mb-4">
-                    <Rocket className="text-[rgb(70,197,212)] group-hover:text-[rgb(70,197,212)]/80 transition-colors duration-300" size={32} />
-                  </div>
-                  <h3 className="text-xl font-semibold mb-2 group-hover:text-[rgb(70,197,212)]/80 transition-colors duration-300">Projects</h3>
-                  <p className="text-gray-400 text-sm mb-4">Explore our innovative coding projects and solutions</p>
-                  <ArrowRight className="text-[rgb(70,197,212)] group-hover:translate-x-1 transition-transform duration-300" size={20} />
-                </div>
-              </Link>
-
-              <Link href="/events">
-                <div className="group bg-gradient-to-br from-[rgb(70,197,212)]/20 to-[rgb(70,197,212)]/10 backdrop-blur-sm border border-[rgb(70,197,212)]/20 rounded-2xl p-6 hover:scale-105 transition-all duration-300 hover:shadow-2xl hover:shadow-[rgb(70,197,212)]/20 cursor-pointer">
-                  <div className="mb-4">
-                    <Sparkles className="text-[rgb(70,197,212)] group-hover:text-[rgb(70,197,212)]/80 transition-colors duration-300" size={32} />
-                  </div>
-                  <h3 className="text-xl font-semibold mb-2 group-hover:text-[rgb(70,197,212)]/80 transition-colors duration-300">Events</h3>
-                  <p className="text-gray-400 text-sm mb-4">Join our workshops, hackathons, and tech talks</p>
-                  <ArrowRight className="text-[rgb(70,197,212)] group-hover:translate-x-1 transition-transform duration-300" size={20} />
-                </div>
-              </Link>
-
-              <Link href="/team">
-                <div className="group bg-gradient-to-br from-[rgb(70,197,212)]/20 to-[rgb(70,197,212)]/10 backdrop-blur-sm border border-[rgb(70,197,212)]/20 rounded-2xl p-6 hover:scale-105 transition-all duration-300 hover:shadow-2xl hover:shadow-[rgb(70,197,212)]/20 cursor-pointer">
-                  <div className="mb-4">
-                    <Users className="text-[rgb(70,197,212)] group-hover:text-[rgb(70,197,212)]/80 transition-colors duration-300" size={32} />
-                  </div>
-                  <h3 className="text-xl font-semibold mb-2 group-hover:text-[rgb(70,197,212)]/80 transition-colors duration-300">Our Team</h3>
-                  <p className="text-gray-400 text-sm mb-4">Meet the passionate minds behind VKSHA</p>
-                  <ArrowRight className="text-[rgb(70,197,212)] group-hover:translate-x-1 transition-transform duration-300" size={20} />
-                </div>
-              </Link>
-
-              <Link href="/contact">
-                <div className="group bg-gradient-to-br from-[rgb(70,197,212)]/20 to-[rgb(70,197,212)]/10 backdrop-blur-sm border border-[rgb(70,197,212)]/20 rounded-2xl p-6 hover:scale-105 transition-all duration-300 hover:shadow-2xl hover:shadow-[rgb(70,197,212)]/20 cursor-pointer">
-                  <div className="mb-4">
-                    <div className="w-8 h-8 bg-gradient-to-r from-[rgb(70,197,212)] via-[rgb(70,197,212)] to-[rgb(70,197,212)] rounded-lg flex items-center justify-center">
-                      <span className="text-white font-bold">@</span>
-                    </div>
-                  </div>
-                  <h3 className="text-xl font-semibold mb-2 group-hover:text-[rgb(70,197,212)]/80 transition-colors duration-300">Contact</h3>
-                  <p className="text-gray-400 pb-4 text-sm mb-4">Get in touch and join our community</p>
-                  <ArrowRight className="text-[rgb(70,197,212)] group-hover:translate-x-1 transition-transform duration-300" size={20} />
-                </div>
-              </Link>
-            </div>
-          </div>
-        </section>
+        
 
       </div>
     </Layout>

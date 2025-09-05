@@ -57,11 +57,11 @@ export default function Hero() {
 
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Link href="/projects">
+          {/* <Link href="/projects">
             <Button className="bg-gradient-to-r from-sky-900 via-cyan-800 to-teal-900 hover:from-sky-800 hover:via-cyan-700 hover:to-teal-800 px-8 py-4 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 text-white shadow-md shadow-cyan-900/40">
               Explore Projects
             </Button>
-          </Link>
+          </Link> */}
 
           {/* Updated Join Us button with onClick handler */}
           <Button
