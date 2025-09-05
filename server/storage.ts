@@ -39,6 +39,7 @@ export class MemStorage implements IStorage {
     const id = randomUUID();
     const contactMessage: ContactMessage = {
       ...insertMessage,
+      phoneNumber: insertMessage.phoneNumber ?? null,
       id,
       createdAt: new Date(),
     };

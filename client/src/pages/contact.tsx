@@ -70,7 +70,7 @@ export default function Contact() {
               <ArrowLeft className="mr-2 group-hover:-translate-x-1 transition-transform duration-300" size={20} />
               Back to Home
             </Link>
-            
+
             <div className="text-center mb-16">
               <h1 className="text-4xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-white via-purple-200 to-white bg-clip-text text-transparent">
                 Get In Touch
@@ -88,12 +88,12 @@ export default function Contact() {
             <h2 className="text-3xl font-bold mb-12 text-center bg-gradient-to-r from-purple-400 to-purple-600 bg-clip-text text-transparent">
               Contact Information
             </h2>
-            
+
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
               {contactInfo.map((info, index) => {
                 const IconComponent = info.icon;
                 return (
-                  <div 
+                  <div
                     key={index}
                     className="bg-gradient-to-br from-purple-900/20 to-purple-800/10 backdrop-blur-sm border border-purple-500/20 rounded-2xl p-6 hover:scale-105 transition-all duration-300 hover:shadow-xl hover:shadow-purple-500/20 text-center"
                   >
@@ -120,7 +120,7 @@ export default function Contact() {
                 {socialLinks.map((social, index) => {
                   const IconComponent = social.icon;
                   return (
-                    <a 
+                    <a
                       key={index}
                       href={social.href}
                       className={`p-3 bg-gradient-to-r from-purple-500/20 to-purple-600/20 rounded-full text-gray-400 ${social.color} transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-purple-500/30`}
@@ -150,32 +150,7 @@ export default function Contact() {
           </div>
         </section>
 
-        {/* FAQ Section */}
-        <section className="px-4 lg:px-8 py-16">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-12 text-center bg-gradient-to-r from-purple-400 to-purple-600 bg-clip-text text-transparent">
-              Frequently Asked Questions
-            </h2>
-            
-            <div className="space-y-6">
-              {faqs.map((faq, index) => (
-                <div 
-                  key={index}
-                  className="bg-gradient-to-br from-purple-900/20 to-purple-800/10 backdrop-blur-sm border border-purple-500/20 rounded-2xl p-6 hover:border-purple-500/30 transition-all duration-300"
-                >
-                  <h3 className="text-lg font-semibold mb-3 text-white flex items-start">
-                    <span className="text-purple-400 mr-3 font-bold">Q:</span>
-                    {faq.question}
-                  </h3>
-                  <p className="text-gray-300 leading-relaxed pl-8">
-                    <span className="text-purple-400 mr-3 font-bold">A:</span>
-                    {faq.answer}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+        {/* FAQ removed from contact page — consolidated under FAQ pages */}
 
         {/* Map Section (Placeholder) */}
         <section className="px-4 lg:px-8 py-16">
@@ -183,7 +158,7 @@ export default function Contact() {
             <h2 className="text-3xl font-bold mb-12 text-center bg-gradient-to-r from-purple-400 to-purple-600 bg-clip-text text-transparent">
               Find Us On Campus
             </h2>
-            
+
             <div className="bg-gradient-to-br from-purple-900/20 to-purple-800/10 backdrop-blur-sm border border-purple-500/20 rounded-3xl p-8 text-center">
               <div className="bg-gradient-to-r from-purple-500/10 to-purple-600/10 rounded-2xl p-16 mb-6">
                 <MapPin className="mx-auto text-purple-400 mb-4" size={64} />
@@ -195,7 +170,7 @@ export default function Contact() {
                   Interactive campus map coming soon
                 </p>
               </div>
-              
+
               <div className="grid md:grid-cols-3 gap-6 text-sm">
                 <div className="bg-purple-500/10 rounded-xl p-4">
                   <h4 className="font-semibold text-purple-300 mb-2">Nearest Landmark</h4>

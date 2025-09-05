@@ -12,6 +12,8 @@ import Team from "@/pages/team";
 import Contact from "@/pages/contact";
 import NotFound from "@/pages/not-found";
 import Blogs from "@/pages/blogs";
+import FAQ from "@/pages/faq";
+import FAQList from "@/pages/faq-list";
 
 // animation component
 import IntroAnimation from "@/components/IntroAnimation";
@@ -38,6 +40,8 @@ function Router() {
         <Route path="/team" component={Team} />
         <Route path="/blogs" component={Blogs} />
         <Route path="/contact" component={Contact} />
+        <Route path="/faq" component={FAQ} />
+        <Route path="/faq-list" component={FAQList} />
         <Route component={NotFound} />
       </Switch>
     </>
